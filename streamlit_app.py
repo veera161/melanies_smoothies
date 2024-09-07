@@ -5,7 +5,7 @@ from snowflake.snowpark.functions import col
 # Write directly to the app
 st.title("Example Streamlit App :balloon:")
 st.write(
-    "Choose the Fruits you want in your custo smoothie"
+    "Chose the Fruits you want in your custo smoothie"
 )
 
 name_on_order = st.text_input('Name on Smoothie')
