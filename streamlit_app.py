@@ -2,6 +2,7 @@
 import streamlit as st
 from snowflake.snowpark.functions import col
 
+streamlit.title("My parents new health dinner")
 # Write directly to the app
 st.title("Example Streamlit App :balloon:")
 st.write(
