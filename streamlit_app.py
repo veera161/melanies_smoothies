@@ -51,7 +51,7 @@ fv_dt = st.dataframe(data=fruityvice_response.json(),use_container_width=True)
 if ingredients_list :
         ingredients_string = ''
         for furit_chosen in ingredients_list:   
-            ingredients_string = furit_choosen + ' '
+            ingredients_string = furit_chosen + ' '
             st.subheader(furit_chosen + 'Nutrition Information')
             fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ furit_chosen)
             fv_dt = st.dataframe(data=fruityvice_response.json(),use_container_width=True)
