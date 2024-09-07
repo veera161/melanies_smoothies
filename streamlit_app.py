@@ -46,8 +46,17 @@ if time_to_insert:
 
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-# st.text(fruityvice_response.json())
 fv_dt = st.dataframe(data=fruityvice_response.json(),use_container_width=True)
+
+if ingredients_list :
+        ingredients_string = ''
+        for furit_choosen in ingredients_list:   
+            ingredients_string = furit_choosen + ' '
+            fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+            fv_dt = st.dataframe(data=fruityvice_response.json(),use_container_width=True)
+
+        
+    
 
 
 
